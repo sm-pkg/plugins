@@ -9,6 +9,11 @@ properties:
     items:
       type: string
     description: List of dependencies
+  inputs:
+    type: array
+    items:
+      type: string
+    description: List of input plugin scripts (.sp) to build
   authors:
     type: array
     items:
