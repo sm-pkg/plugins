@@ -1,5 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
   "name": "class_restrict",
-  "homepage": "https://forums.alliedmods.net/showthread.php?p=642353"
+  "description": "Class restrictions",
+  "homepage": "https://forums.alliedmods.net/showthread.php?p=642353",
+  "version": "0.6.1",
+  "inputs": [
+    "classrestrict.sp"
+  ]
 }

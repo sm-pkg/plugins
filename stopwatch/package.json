@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
+  "name": "stopwatch",
+  "description": "Allows using Stopwatch mode without enabling Tournament mode.",
+  "homepage": "https://github.com/Mikusch/stopwatch",
+  "authors": [
+    "Mikusch"
+  ],
+  "inputs": [
+    "stopwatch.sp"
+  ],
+  "version": "1.0.0"
+}

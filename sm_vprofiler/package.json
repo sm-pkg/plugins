@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
+  "name": "sm_vprofiler",
+  "description": "Measures per-plugin performance and provides a log with various counters",
+  "homepage": "https://github.com/dragokas",
+  "authors": [
+    "Moonly Days"
+  ],
+  "inputs": [
+    "sm_vprofiler.sp"
+  ],
+  "version": "1.0.0"
+}

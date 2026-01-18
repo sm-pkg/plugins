@@ -1,8 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
-  "name": "connect",
-  "homepage": "https://github.com/username/afkmanager4",
+  "name": "afkmanager4",
+  "homepage": "http://www.dawgclan.net",
   "description": "A package for managing AFKs in a game.",
-  "inputs": [],
-  "version": ""
+  "inputs": [
+    "afkmanager4.sp"
+  ],
+  "version": "4.3.1"
 }

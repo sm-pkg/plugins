@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
+  "name": "disableautokick",
+  "description": "Protects players with reserve slot from being autokicked",
+  "homepage": "http://www.righttorule.com/",
+  "inputs": [
+    "disableautokick.sp"
+  ],
+  "version": "0.0.3"
+}

@@ -24,12 +24,12 @@ ConVar convar_mpTournament;
 Handle dhook_CEconItemSystem_ReloadWhitelist;
 Handle dhook_CTFPlayer_GetLoadoutItem;
 
-public Plugin myinfo = 
+public Plugin myinfo =
 {
-	name = "Enable Item Whitelist outside of Tournament Mode", 
-	author = "Sappykun", 
-	description = "Force-enables tournament mode only when loading and applying the item whitelist.", 
-	version = PLUGIN_VERSION, 
+	name = "Enable Item Whitelist outside of Tournament Mode",
+	author = "Sappykun",
+	description = "Force-enables tournament mode only when loading and applying the item whitelist.",
+	version = PLUGIN_VERSION,
 	url = "https://forums.alliedmods.net/showthread.php?p=2819339"
 };
 
@@ -48,7 +48,7 @@ public void OnPluginStart()
 
 	if (dhook_CEconItemSystem_ReloadWhitelist == null) SetFailState("Failed to create dhook_CEconItemSystem_ReloadWhitelist");
 	if (dhook_CTFPlayer_GetLoadoutItem == null) SetFailState("Failed to create dhook_CTFPlayer_GetLoadoutItem");
-	
+
 	delete conf;
 
 	DHookEnableDetour(dhook_CEconItemSystem_ReloadWhitelist, false, DHookCallback_TournamentModeEnable);

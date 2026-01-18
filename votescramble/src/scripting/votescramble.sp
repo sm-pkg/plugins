@@ -33,7 +33,7 @@ int g_iVotes;
 int g_iVotesNeeded;
 int g_iRoundsSinceLastScramble;
 int g_iMinutesSinceLastScramble;
-bool g_bVoted[MAXPLAYERS + 1]; 
+bool g_bVoted[MAXPLAYERS + 1];
 int g_bVoteCooldown;
 int g_bScrambleTeams;
 int g_bBonusRoundTime;

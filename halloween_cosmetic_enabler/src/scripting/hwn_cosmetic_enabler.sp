@@ -31,7 +31,7 @@ enum
 	VISION_MODE_PYRO,
 	VISION_MODE_HALLOWEEN,
 	VISION_MODE_ROME,
-	
+
 	MAX_VISION_MODES
 };
 
@@ -57,23 +57,23 @@ public void OnPluginStart()
 {
 	tf_enable_halloween_cosmetics = CreateConVar("tf_enable_halloween_cosmetics", "1", "Whether to enable cosmetics and effects with a Halloween / Full Moon restriction.");
 	tf_enable_halloween_cosmetics.AddChangeHook(ConVarChanged_EnableHalloweenCosmetics);
-	
+
 	tf_forced_holiday = FindConVar("tf_forced_holiday");
-	
+
 	GameData hGameConf = new GameData("hwn_cosmetic_enabler");
 	if (!hGameConf)
 		SetFailState("Failed to find hwn_cosmetic_enabler gamedata");
-	
+
 	g_hDetourIsHolidayActive = DynamicDetour.FromConf(hGameConf, "TF_IsHolidayActive");
 	if (!g_hDetourIsHolidayActive)
 		SetFailState("Failed to setup detour for TF_IsHolidayActive");
-	
+
 	g_hDetourInputFire = DynamicDetour.FromConf(hGameConf, "CLogicOnHoliday::InputFire");
 	if (!g_hDetourInputFire)
 		SetFailState("Failed to setup detour for CLogicOnHoliday::InputFire");
-	
+
 	delete hGameConf;
-	
+
 	for (int iClient = 1; iClient <= MaxClients; iClient++)
 	{
 		if (IsClientInGame(iClient))
@@ -101,7 +101,7 @@ public void OnClientPutInServer(int iClient)
 {
 	if (!g_bIsEnabled)
 		return;
-	
+
 	if (!IsFakeClient(iClient))
 		ReplicateHolidayToClient(iClient, TFHoliday_HalloweenOrFullMoon);
 }
@@ -110,10 +110,10 @@ public void OnEntityCreated(int iEntity, const char[] szClassname)
 {
 	if (!g_bIsEnabled)
 		return;
-	
+
 	if (!g_bIsMapRunning)
 		return;
-	
+
 	if (!strncmp(szClassname, "item_healthkit_", 15))
 		SDKHook(iEntity, SDKHook_SpawnPost, SDKHookCB_HealthKit_SpawnPost);
 }
@@ -138,17 +138,17 @@ public void ConVarChanged_EnableHalloweenCosmetics(ConVar hConVar, const char[] 
 public MRESReturn DHookCallback_IsHolidayActive_Post(DHookReturn hReturn, DHookParam hParam)
 {
 	TFHoliday eHoliday = hParam.Get(1);
-	
+
 	if (!g_bIsEnabled)
 		return MRES_Ignored;
-	
+
 	// Force-enable Halloween at all times unless we specifically request not to
 	if (eHoliday == TFHoliday_HalloweenOrFullMoon && !g_bNoForcedHoliday)
 	{
 		hReturn.Value = true;
 		return MRES_Supercede;
 	}
-	
+
 	// Otherwise, let the game determine which holiday is active
 	return MRES_Ignored;
 }
@@ -157,27 +157,27 @@ public MRESReturn DHookCallback_InputFire_Pre(int iEntity, DHookParam hParam)
 {
 	// Prevent tf_logic_on_holiday from assuming it's always Halloween
 	g_bNoForcedHoliday = true;
-	
+
 	return MRES_Ignored;
 }
 
 public MRESReturn DHookCallback_InputFire_Post(int iEntity, DHookParam hParam)
 {
 	g_bNoForcedHoliday = false;
-	
+
 	return MRES_Ignored;
 }
 
 public void SDKHookCB_HealthKit_SpawnPost(int iEntity)
 {
 	g_bNoForcedHoliday = true;
-	
+
 	if (!TF2_IsHolidayActive(TFHoliday_HalloweenOrFullMoon))
 	{
 		// Force normal non-holiday health kit model
 		SetEntProp(iEntity, Prop_Send, "m_nModelIndexOverrides", 0, _, VISION_MODE_HALLOWEEN);
 	}
-	
+
 	g_bNoForcedHoliday = false;
 }
 
@@ -187,10 +187,10 @@ public void RequestFrameCallback_ReplicateForcedHoliday(TFHoliday eHoliday)
 	{
 		if (!IsClientInGame(iClient))
 			continue;
-		
+
 		if (IsFakeClient(iClient))
 			continue;
-		
+
 		ReplicateHolidayToClient(iClient, eHoliday);
 	}
 }
@@ -198,16 +198,16 @@ public void RequestFrameCallback_ReplicateForcedHoliday(TFHoliday eHoliday)
 void TogglePlugin(bool bEnable)
 {
 	g_bIsEnabled = bEnable;
-	
+
 	if (bEnable)
 	{
 		tf_forced_holiday.AddChangeHook(ConVarChanged_ForcedHoliday);
-		
+
 		if (g_hDetourIsHolidayActive)
 		{
 			g_hDetourIsHolidayActive.Enable(Hook_Post, DHookCallback_IsHolidayActive_Post);
 		}
-		
+
 		if (g_hDetourInputFire)
 		{
 			g_hDetourInputFire.Enable(Hook_Pre, DHookCallback_InputFire_Pre);
@@ -217,27 +217,27 @@ void TogglePlugin(bool bEnable)
 	else
 	{
 		tf_forced_holiday.RemoveChangeHook(ConVarChanged_ForcedHoliday);
-		
+
 		if (g_hDetourIsHolidayActive)
 		{
 			g_hDetourIsHolidayActive.Disable(Hook_Post, DHookCallback_IsHolidayActive_Post);
 		}
-		
+
 		if (g_hDetourInputFire)
 		{
 			g_hDetourInputFire.Disable(Hook_Pre, DHookCallback_InputFire_Pre);
 			g_hDetourInputFire.Disable(Hook_Post, DHookCallback_InputFire_Post);
 		}
 	}
-	
+
 	for (int iClient = 1; iClient <= MaxClients; iClient++)
 	{
 		if (!IsClientInGame(iClient))
 			continue;
-		
+
 		if (IsFakeClient(iClient))
 			continue;
-		
+
 		if (bEnable)
 		{
 			ReplicateHolidayToClient(iClient, TFHoliday_HalloweenOrFullMoon);
