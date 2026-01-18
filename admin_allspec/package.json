@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
+  "name": "admin_allspec",
+  "homepage": "https://github.com/Drifter321/admin-all-spec",
+  "version": "1.0.2",
+  "inputs": [
+    "admin-allspec.sp"
+  ]
+}
