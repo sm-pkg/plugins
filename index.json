@@ -1,0 +1,44 @@
+[
+    {
+        "name": "admin_allspec",
+        "dependencies": null,
+        "inputs": [
+            "admin-allspec.sp"
+        ],
+        "authors": null,
+        "version": "1.0.2",
+        "description": "",
+        "license": "",
+        "homepage": "https://github.com/Drifter321/admin-all-spec"
+    },
+    {
+        "name": "connect",
+        "dependencies": null,
+        "inputs": [],
+        "authors": null,
+        "version": "",
+        "description": "A package for managing AFKs in a game.",
+        "license": "",
+        "homepage": "https://github.com/username/afkmanager4"
+    },
+    {
+        "name": "class_restrict",
+        "dependencies": null,
+        "inputs": null,
+        "authors": null,
+        "version": "",
+        "description": "",
+        "license": "",
+        "homepage": "https://forums.alliedmods.net/showthread.php?p=642353"
+    },
+    {
+        "name": "connect",
+        "dependencies": null,
+        "inputs": [],
+        "authors": null,
+        "version": "",
+        "description": "",
+        "license": "",
+        "homepage": "https://forums.alliedmods.net/showthread.php?t=162489"
+    }
+]

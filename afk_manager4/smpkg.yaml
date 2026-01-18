@@ -1,9 +1,0 @@
-version: 0.1.0
-name: afkmanager4
-authors:
-  - Something
-description: |
-  A package for managing AFKs in a game.
-homepage: https://github.com/username/afkmanager4
-license:
-dependencies: []
