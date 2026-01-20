@@ -1,6 +1,6 @@
 # smpkg-repo
 
-A repository containing plugins for sourcemod for use with [smpkg](https://github.com/leighmacdonald/smpkg).
+A repository containing plugins for sourcemod for use with [smpkg](https://github.com/sm-pkg/sm-pkg).
 
 ## Plugin Package Definitions
 
@@ -11,7 +11,7 @@ Example smpkg.yaml
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
+  "$schema": "https://raw.githubusercontent.com/sm-pkg/plugins/refs/heads/master/schema.json",
   "name": "plugin_name",
   "homepage": "https://github.com/username/plugin",
   "description": "An example plugin definition.",
