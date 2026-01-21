@@ -1,13 +1,12 @@
-# smpkg-repo
+# plugins
 
-A repository containing plugins for sourcemod for use with [smpkg](https://github.com/sm-pkg/sm-pkg).
+A repository containing plugins for sourcemod for use with [sm-pkg](https://github.com/sm-pkg/sm-pkg).
 
 ## Plugin Package Definitions
 
-Each plugin comes with a package definition file named `package.yaml`. This file contains metadata about the plugin, such as its name, version, authors, description, 
-homepage, license, and dependencies.
+Each plugin comes with a package definition file named `package.json`. This file contains metadata about the plugin, such as its name, version, authors, description, homepage, license, and dependencies.
 
-Example smpkg.yaml
+Example `package.json`
 
 ```json
 {
