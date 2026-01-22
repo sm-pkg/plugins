@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
+  "name": "send_to_spec",
+  "description": "A simple spectator manager.",
+  "homepage": "",
+  "inputs": ["SendToSpec.sp"],
+  "version": "1.0.0"
+}

@@ -4,13 +4,13 @@ A repository containing plugins for sourcemod for use with [sm-pkg](https://gith
 
 ## Plugin Package Definitions
 
-Each plugin comes with a package definition file named `package.json`. This file contains metadata about the plugin, such as its name, version, authors, description, homepage, license, and dependencies.
+Each plugin comes with a plugin definition file named `plugin.json`. This file contains metadata about the plugin, such as its name, version, authors, description, homepage, license, and dependencies.
 
-Example `package.json`
+Example `plugin.json`
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/sm-pkg/plugins/refs/heads/master/schema.json",
+  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
   "name": "plugin_name",
   "homepage": "https://github.com/username/plugin",
   "description": "An example plugin definition.",

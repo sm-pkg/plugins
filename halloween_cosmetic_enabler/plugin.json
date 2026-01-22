@@ -1,13 +1,9 @@
 {
-  "$schema": "https://raw.githubusercontent.com/leighmacdonald/smpkg-repo/refs/heads/master/schema.json",
+  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
   "name": "halloween_cosmetic_enabler",
   "description": "Protects players with reserve slot from being autokicked",
-  "authors": [
-    "Mikusch"
-  ],
+  "authors": ["Mikusch"],
   "homepage": "https://github.com/Mikusch/HalloweenCosmeticEnabler",
-  "inputs": [
-    "hwn_cosmetic_enabler.sp"
-  ],
+  "inputs": ["hwn_cosmetic_enabler.sp"],
   "version": "1.3.1"
 }
