@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/sm-pkg/plugins/refs/heads/master/schema.json",
-  "title": "smpkg package definition",
+  "title": "sm-pkg package definition",
   "type": "object",
   "properties": {
     "name": {
