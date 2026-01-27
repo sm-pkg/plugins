@@ -1,9 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
-  "name": "votefailed",
-  "description": "Used to display specific vote failed and call vote failed messages to a user",
-  "homepage": "https://forums.alliedmods.net/showthread.php?t=208008",
-  "authors": ["Powerlord"],
-  "inputs": ["votefailed.sp"],
-  "version": "1.0.0"
-}

@@ -1,9 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
-  "name": "tidychat",
-  "description": "Cleans up the chat area",
-  "homepage": "https://forums.alliedmods.net/showthread.php?t=101340",
-  "authors": ["linux_lover"],
-  "inputs": ["tidychat.sp"],
-  "version": "0.5.0"
-}

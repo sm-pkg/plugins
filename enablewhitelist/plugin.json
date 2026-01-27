@@ -1,9 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
-  "name": "enablewhitelist",
-  "description": "Force-enables tournament mode only when loading and applying the item whitelist.",
-  "homepage": "https://forums.alliedmods.net/showthread.php?p=2819339",
-  "authors": ["Sappykun"],
-  "inputs": ["enablewhitelist.sp"],
-  "version": "1.0.1"
-}

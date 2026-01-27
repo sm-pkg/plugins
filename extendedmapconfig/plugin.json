@@ -1,8 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
-  "name": "extendedmapconfig",
-  "description": "Allows you to use seperate config files for each gametype and map.",
-  "homepage": "http://sourcemod.corks.nl/",
-  "inputs": ["extendedmapconfig.sp"],
-  "version": "1.1.1"
-}

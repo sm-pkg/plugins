@@ -14,6 +14,8 @@ import (
 	"os"
 	"path"
 	"strings"
+
+	"go.yaml.in/yaml/v2"
 )
 
 const (
@@ -22,14 +24,14 @@ const (
 )
 
 type Package struct {
-	Name         string   `json:"name"`
-	Dependencies []string `json:"dependencies"`
-	Inputs       []string `json:"inputs"`
-	Authors      []string `json:"authors"`
-	Version      string   `json:"version"`
-	Description  string   `json:"description"`
-	License      string   `json:"license"`
-	Homepage     string   `json:"homepage"`
+	Name         string   `yaml:"name"`
+	Dependencies []string `yaml:"dependencies"`
+	Inputs       []string `yaml:"inputs"`
+	Authors      []string `yaml:"authors"`
+	Version      string   `yaml:"version"`
+	Description  string   `yaml:"description"`
+	License      string   `yaml:"license"`
+	Homepage     string   `yaml:"homepage"`
 }
 
 func main() {
@@ -96,8 +98,7 @@ func writeIndex(packages []*Package) error {
 		return errOutput
 	}
 	defer output.Close()
-	enc := json.NewEncoder(output)
-	enc.SetIndent("", "    ")
+	enc := yaml.NewEncoder(output)
 	if err := enc.Encode(packages); err != nil {
 		return err
 	}

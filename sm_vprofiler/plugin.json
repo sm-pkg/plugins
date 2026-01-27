@@ -1,9 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
-  "name": "sm_vprofiler",
-  "description": "Measures per-plugin performance and provides a log with various counters",
-  "homepage": "https://github.com/dragokas",
-  "authors": ["Moonly Days"],
-  "inputs": ["sm_vprofiler.sp"],
-  "version": "1.0.0"
-}

@@ -1,0 +1,8 @@
+$schema: >-
+  https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+name: teamcrits
+description: Enables permanent crits for either team
+homepage: "https://github.com/leighmacdonald/uncletopia"
+inputs:
+  - teamcrits.sp
+version: 1.0.0

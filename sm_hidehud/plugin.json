@@ -1,9 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json",
-  "name": "disableautokick",
-  "description": "Hides a players HUD",
-  "homepage": "https://github.com/MoonlyDays",
-  "authors": ["Moonly Days"],
-  "inputs": ["sm_hidehud.sp"],
-  "version": "1.0.0"
-}
