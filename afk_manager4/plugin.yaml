@@ -1,5 +1,4 @@
-$schema: >-
-  https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
 name: afkmanager4
 homepage: "http://www.dawgclan.net"
 description: A package for managing AFKs in a game.

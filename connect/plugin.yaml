@@ -1,5 +1,4 @@
-$schema: >-
-  https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
 name: connect
 description: A safer OnClientPreConnect forward
 homepage: "https://github.com/asherkin/connect"

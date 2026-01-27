@@ -8,7 +8,6 @@
 package main
 
 import (
-	"encoding/json"
 	"log"
 	"log/slog"
 	"os"
@@ -19,8 +18,8 @@ import (
 )
 
 const (
-	packageFile = "package.json"
-	indexFile   = "index.json"
+	packageFile = "plugin.yaml"
+	indexFile   = "index.yaml"
 )
 
 type Package struct {
@@ -85,7 +84,7 @@ func readPackage(path string) (*Package, error) {
 	defer fp.Close()
 
 	var pkg Package
-	if err := json.NewDecoder(fp).Decode(&pkg); err != nil {
+	if err := yaml.NewDecoder(fp).Decode(&pkg); err != nil {
 		return nil, err
 	}
 

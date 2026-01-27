@@ -1,5 +1,4 @@
-$schema: >-
-  https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
 name: votescramble
 description: Vote to scramble teams
 homepage: "https://uncletopia.com"
