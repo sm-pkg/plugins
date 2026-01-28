@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
-name: tf2-comp-fixes
+name: tf2_comp_fixes
 description: Various technical or gameplay changes catered towards competitive play
 homepage: "https://github.com/ldesgoui/tf2-comp-fixes"
 authors:
