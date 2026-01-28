@@ -1,198 +1,259 @@
-- name: admin_allspec
-  dependencies: []
-  inputs:
-  - admin-allspec.sp
-  authors: []
-  version: 1.0.2
-  description: Allow admins to spectate
-  license: ""
-  homepage: https://github.com/Drifter321/admin-all-spec
-- name: afkmanager4
-  dependencies: []
-  inputs:
-  - afkmanager4.sp
-  authors: []
-  version: 4.3.1
-  description: A package for managing AFKs in a game.
-  license: ""
-  homepage: http://www.dawgclan.net
-- name: class_restrict
-  dependencies: []
-  inputs:
-  - classrestrict.sp
-  authors: []
-  version: 0.6.1
-  description: Class restrictions
-  license: ""
-  homepage: https://forums.alliedmods.net/showthread.php?p=642353
 - name: connect
-  dependencies: []
-  inputs: []
-  authors: []
-  version: 1.4.0
   description: A safer OnClientPreConnect forward
-  license: ""
-  homepage: https://github.com/asherkin/connect
-- name: disableautokick
-  dependencies: []
-  inputs:
-  - disableautokick.sp
-  authors: []
-  version: 0.0.3
-  description: Protects players with reserve slot from being autokicked
-  license: ""
-  homepage: http://www.righttorule.com/
+  version: 1.4.0
+  inputs: []
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: enablewhitelist
-  dependencies: []
+  description: Force-enables tournament mode only when loading and applying the item whitelist.
+  version: 1.0.1
   inputs:
   - enablewhitelist.sp
+  url: null
   authors:
   - Sappykun
-  version: 1.0.1
-  description: Force-enables tournament mode only when loading and applying the item
-    whitelist.
-  license: ""
-  homepage: https://forums.alliedmods.net/showthread.php?p=2819339
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: extendedmapconfig
-  dependencies: []
+  description: Allows you to use seperate config files for each gametype and map.
+  version: 1.1.1
   inputs:
   - extendedmapconfig.sp
-  authors: []
-  version: 1.1.1
-  description: Allows you to use seperate config files for each gametype and map.
-  license: ""
-  homepage: http://sourcemod.corks.nl/
-- name: halloween_cosmetic_enabler
-  dependencies: []
-  inputs:
-  - hwn_cosmetic_enabler.sp
-  authors:
-  - Mikusch
-  version: 1.3.1
-  description: Protects players with reserve slot from being autokicked
-  license: ""
-  homepage: https://github.com/Mikusch/HalloweenCosmeticEnabler
-- name: send_to_spec
-  dependencies: []
-  inputs:
-  - SendToSpec.sp
-  authors: []
-  version: 1.0.0
-  description: A simple spectator manager.
-  license: ""
-  homepage: ""
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: disableautokick
-  dependencies: []
+  description: Hides a players HUD
+  version: 1.0.0
   inputs:
   - sm_hidehud.sp
+  url: null
   authors:
   - Moonly Days
-  version: 1.0.0
-  description: Hides a players HUD
-  license: ""
-  homepage: https://github.com/MoonlyDays
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: sm_nocontracker
-  dependencies: []
+  description: Blocks Contracker
+  version: 1.1.0
   inputs:
   - sm_nocontracker.sp
+  url: null
   authors:
   - Malifox
   - Sreaper
-  version: 1.1.0
-  description: Blocks Contracker
-  license: ""
-  homepage: ""
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: sm_vprofiler
-  dependencies: []
+  description: Measures per-plugin performance and provides a log with various counters
+  version: 1.0.0
   inputs:
   - sm_vprofiler.sp
+  url: null
   authors:
   - Moonly Days
-  version: 1.0.0
-  description: Measures per-plugin performance and provides a log with various counters
-  license: ""
-  homepage: https://github.com/dragokas
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: stopwatch
-  dependencies: []
+  description: Allows using Stopwatch mode without enabling Tournament mode.
+  version: 1.0.0
   inputs:
   - stopwatch.sp
+  url: null
   authors:
   - Mikusch
-  version: 1.0.0
-  description: Allows using Stopwatch mode without enabling Tournament mode.
-  license: ""
-  homepage: https://github.com/Mikusch/stopwatch
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: teamcrits
-  dependencies: []
+  description: Enables permanent crits for either team
+  version: 1.0.0
   inputs:
   - teamcrits.sp
-  authors: []
-  version: 1.0.0
-  description: Enables permanent crits for either team
-  license: ""
-  homepage: https://github.com/leighmacdonald/uncletopia
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: tf2-comp-fixes
-  dependencies: []
+  description: Various technical or gameplay changes catered towards competitive play
+  version: 1.17.2
   inputs:
   - tf2-comp-fixes.sp
+  url: null
   authors:
   - ldesgoui
-  version: 1.17.2
-  description: Various technical or gameplay changes catered towards competitive play
-  license: ""
-  homepage: https://github.com/ldesgoui/tf2-comp-fixes
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: tidychat
-  dependencies: []
+  description: Cleans up the chat area
+  version: 0.5.0
   inputs:
   - tidychat.sp
+  url: null
   authors:
   - linux_lover
-  version: 0.5.0
-  description: Cleans up the chat area
-  license: ""
-  homepage: https://forums.alliedmods.net/showthread.php?t=101340
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: unusedvoicelines
-  dependencies: []
+  description: Plays unused announcer voicelines, class speeches, & sounds/music
+  version: 1.1.0
   inputs:
   - unusedvoicelines.sp
+  url: null
   authors:
   - Nanochip
-  version: 1.1.0
-  description: Plays unused announcer voicelines, class speeches, & sounds/music
-  license: ""
-  homepage: https://steamcommunity.com/id/xNanochip/
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: votefailed
-  dependencies: []
+  description: Used to display specific vote failed and call vote failed messages to a user
+  version: 1.0.0
   inputs:
   - votefailed.sp
+  url: null
   authors:
   - Powerlord
-  version: 1.0.0
-  description: Used to display specific vote failed and call vote failed messages
-    to a user
-  license: ""
-  homepage: https://forums.alliedmods.net/showthread.php?t=208008
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: votescramble
-  dependencies: []
+  description: Vote to scramble teams
+  version: 1.5.0
   inputs:
   - votescramble.sp
+  url: null
   authors:
   - Nanochip
   - viora
   - raspy
-  version: 1.5.0
-  description: Vote to scramble teams
-  license: ""
-  homepage: https://uncletopia.com
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: waitingdoors
-  dependencies: []
+  description: Open spawn doors during waiting for players round
+  version: 0.0.6
   inputs:
   - waitingdoors.sp
+  url: null
   authors:
   - stephanie
   - Nanochip
   - Lange
-  version: 0.0.6
-  description: Open spawn doors during waiting for players round
-  license: ""
-  homepage: https://sappho.io/
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: admin_allspec
+  description: Allow admins to spectate
+  version: 1.0.2
+  inputs:
+  - admin-allspec.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: disableautokick
+  description: Protects players with reserve slot from being autokicked
+  version: 0.0.3
+  inputs:
+  - disableautokick.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: class_restrict
+  description: Class restrictions
+  version: 0.6.1
+  inputs:
+  - classrestrict.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs:
+  - name: classrestrict.cfg
+    values:
+      sm_classrestrict_blu_medics: '-1'
+      sm_classrestrict_red_demomen: '-1'
+      sm_classrestrict_blu_heavies: '-1'
+      sm_classrestrict_blu_pyros: '-1'
+      sm_classrestrict_blu_demomen: '-1'
+      sm_classrestrict_red_pyros: '-1'
+      sm_classrestrict_blu_scouts: '-1'
+      sm_classrestrict_blu_spies: '-1'
+      sm_classrestrict_red_engineers: '-1'
+      sm_classrestrict_red_spies: '-1'
+      sm_classrestrict_red_scouts: '-1'
+      sm_classrestrict_flags: ''
+      sm_classrestrict_red_medics: '-1'
+      sm_classrestrict_blu_engineers: '-1'
+      sm_classrestrict_enabled: '1'
+      sm_classrestrict_blu_snipers: '-1'
+      sm_classrestrict_blu_soldiers: '-1'
+      sm_classrestrict_red_heavies: '-1'
+      sm_classrestrict_red_snipers: '-1'
+      sm_classrestrict_immunity: '0'
+      sm_classrestrict_red_soldiers: '-1'
+- name: afkmanager4
+  description: A package for managing AFKs in a game.
+  version: 4.3.1
+  inputs:
+  - afkmanager4.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: send_to_spec
+  description: A simple spectator manager.
+  version: 1.0.0
+  inputs:
+  - SendToSpec.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: halloween_cosmetic_enabler
+  description: Protects players with reserve slot from being autokicked
+  version: 1.3.1
+  inputs:
+  - hwn_cosmetic_enabler.sp
+  url: null
+  authors:
+  - Mikusch
+  license: null
+  dependencies: null
+  path: null
+  configs: null
