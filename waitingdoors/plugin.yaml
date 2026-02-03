@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+---
 name: waitingdoors
 description: Open spawn doors during waiting for players round
 homepage: "https://sappho.io/"

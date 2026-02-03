@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+---
 name: stopwatch
 description: Allows using Stopwatch mode without enabling Tournament mode.
 homepage: "https://github.com/Mikusch/stopwatch"

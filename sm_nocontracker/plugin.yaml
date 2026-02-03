@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+---
 name: sm_nocontracker
 description: Blocks Contracker
 homepage: ""

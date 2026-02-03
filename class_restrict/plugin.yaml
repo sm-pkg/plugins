@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+---
 name: class_restrict
 description: Class restrictions
 homepage: "https://forums.alliedmods.net/showthread.php?p=642353"

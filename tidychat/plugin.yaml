@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+---
 name: tidychat
 description: Cleans up the chat area
 homepage: "https://forums.alliedmods.net/showthread.php?t=101340"
