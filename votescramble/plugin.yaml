@@ -10,5 +10,4 @@ authors:
 inputs:
   - votescramble.sp
 version: 1.5.0
-dependencies:
-  - nativevotes
+dependencies: ["nativevotes"]
