@@ -16,7 +16,14 @@ jobs:
     steps:
       - uses: sigoden/install-binary@v1
         with:
-          repo: sm-pkg/plugins
+          repo: sm-pkg/sm-pkg
+
+      # - name: install sm-pkg
+      #   run: |
+      #     wget https://github.com/sm-pkg/sm-pkg/releases/download/v0.1.0/sm-pkg_Linux_x86_64.tar.gz -o sm-pkg.tar.gz
+      #     tar -xzf sm-pkg.tar.gz
+      #     chmod +x sm-pkg
+      #     mv sm-pkg /usr/local/bin/sm-pkg
 
       - uses: actions/checkout@v5
 
