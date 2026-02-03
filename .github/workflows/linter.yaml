@@ -23,7 +23,7 @@ jobs:
           json_schema: "plugin.schema.json"
           yaml_as_json: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_file: index.yaml
+          exclude_file: ".yamlignore"
 
       - name: "validate schema"
         uses: karancode/yamllint-github-action@master
