@@ -1,69 +1,22 @@
-- name: connect
-  description: A safer OnClientPreConnect forward
-  version: 1.4.0
-  inputs: []
+- name: tidychat
+  description: Cleans up the chat area
+  version: 0.5.0
+  inputs:
+  - tidychat.sp
+  url: null
+  authors:
+  - linux_lover
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: admin_allspec
+  description: Allow admins to spectate
+  version: 1.0.2
+  inputs:
+  - admin-allspec.sp
   url: null
   authors: null
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: enablewhitelist
-  description: Force-enables tournament mode only when loading and applying the item whitelist.
-  version: 1.0.1
-  inputs:
-  - enablewhitelist.sp
-  url: null
-  authors:
-  - Sappykun
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: extendedmapconfig
-  description: Allows you to use seperate config files for each gametype and map.
-  version: 1.1.1
-  inputs:
-  - extendedmapconfig.sp
-  url: null
-  authors: null
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: disableautokick
-  description: Hides a players HUD
-  version: 1.0.0
-  inputs:
-  - sm_hidehud.sp
-  url: null
-  authors:
-  - Moonly Days
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: sm_nocontracker
-  description: Blocks Contracker
-  version: 1.1.0
-  inputs:
-  - sm_nocontracker.sp
-  url: null
-  authors:
-  - Malifox
-  - Sreaper
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: sm_vprofiler
-  description: Measures per-plugin performance and provides a log with various counters
-  version: 1.0.0
-  inputs:
-  - sm_vprofiler.sp
-  url: null
-  authors:
-  - Moonly Days
   license: null
   dependencies: null
   path: null
@@ -80,97 +33,10 @@
   dependencies: null
   path: null
   configs: null
-- name: teamcrits
-  description: Enables permanent crits for either team
-  version: 1.0.0
-  inputs:
-  - teamcrits.sp
-  url: null
-  authors: null
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: tidychat
-  description: Cleans up the chat area
-  version: 0.5.0
-  inputs:
-  - tidychat.sp
-  url: null
-  authors:
-  - linux_lover
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: unusedvoicelines
-  description: Plays unused announcer voicelines, class speeches, & sounds/music
-  version: 1.1.0
-  inputs:
-  - unusedvoicelines.sp
-  url: null
-  authors:
-  - Nanochip
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: votefailed
-  description: Used to display specific vote failed and call vote failed messages to a user
-  version: 1.0.0
-  inputs:
-  - votefailed.sp
-  url: null
-  authors:
-  - Powerlord
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: votescramble
-  description: Vote to scramble teams
-  version: 1.5.0
-  inputs:
-  - votescramble.sp
-  url: null
-  authors:
-  - Nanochip
-  - viora
-  - raspy
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: waitingdoors
-  description: Open spawn doors during waiting for players round
-  version: 0.0.6
-  inputs:
-  - waitingdoors.sp
-  url: null
-  authors:
-  - stephanie
-  - Nanochip
-  - Lange
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: admin_allspec
-  description: Allow admins to spectate
-  version: 1.0.2
-  inputs:
-  - admin-allspec.sp
-  url: null
-  authors: null
-  license: null
-  dependencies: null
-  path: null
-  configs: null
-- name: disableautokick
-  description: Protects players with reserve slot from being autokicked
-  version: 0.0.3
-  inputs:
-  - disableautokick.sp
+- name: connect
+  description: A safer OnClientPreConnect forward
+  version: 1.4.0
+  inputs: []
   url: null
   authors: null
   license: null
@@ -190,38 +56,27 @@
   configs:
   - name: classrestrict.cfg
     values:
-      sm_classrestrict_red_soldiers: '-1'
-      sm_classrestrict_immunity: '0'
-      sm_classrestrict_blu_pyros: '-1'
-      sm_classrestrict_enabled: '1'
-      sm_classrestrict_red_demomen: '-1'
-      sm_classrestrict_red_heavies: '-1'
-      sm_classrestrict_red_engineers: '-1'
-      sm_classrestrict_blu_scouts: '-1'
-      sm_classrestrict_blu_spies: '-1'
-      sm_classrestrict_flags: ''
-      sm_classrestrict_blu_snipers: '-1'
-      sm_classrestrict_blu_heavies: '-1'
-      sm_classrestrict_blu_demomen: '-1'
-      sm_classrestrict_blu_medics: '-1'
-      sm_classrestrict_red_pyros: '-1'
-      sm_classrestrict_red_snipers: '-1'
-      sm_classrestrict_red_scouts: '-1'
-      sm_classrestrict_red_spies: '-1'
-      sm_classrestrict_red_medics: '-1'
       sm_classrestrict_blu_soldiers: '-1'
+      sm_classrestrict_immunity: '0'
+      sm_classrestrict_red_spies: '-1'
+      sm_classrestrict_blu_snipers: '-1'
+      sm_classrestrict_red_heavies: '-1'
+      sm_classrestrict_red_scouts: '-1'
+      sm_classrestrict_red_engineers: '-1'
+      sm_classrestrict_red_snipers: '-1'
+      sm_classrestrict_red_medics: '-1'
+      sm_classrestrict_red_demomen: '-1'
+      sm_classrestrict_red_pyros: '-1'
       sm_classrestrict_blu_engineers: '-1'
-- name: afkmanager4
-  description: A package for managing AFKs in a game.
-  version: 4.3.1
-  inputs:
-  - afkmanager4.sp
-  url: null
-  authors: null
-  license: null
-  dependencies: null
-  path: null
-  configs: null
+      sm_classrestrict_enabled: '1'
+      sm_classrestrict_blu_medics: '-1'
+      sm_classrestrict_red_soldiers: '-1'
+      sm_classrestrict_blu_pyros: '-1'
+      sm_classrestrict_blu_demomen: '-1'
+      sm_classrestrict_blu_spies: '-1'
+      sm_classrestrict_blu_heavies: '-1'
+      sm_classrestrict_blu_scouts: '-1'
+      sm_classrestrict_flags: ''
 - name: send_to_spec
   description: A simple spectator manager.
   version: 1.0.0
@@ -229,6 +84,20 @@
   - SendToSpec.sp
   url: null
   authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: waitingdoors
+  description: Open spawn doors during waiting for players round
+  version: 0.0.6
+  inputs:
+  - waitingdoors.sp
+  url: null
+  authors:
+  - stephanie
+  - Nanochip
+  - Lange
   license: null
   dependencies: null
   path: null
@@ -245,6 +114,56 @@
   dependencies: null
   path: null
   configs: null
+- name: votescramble
+  description: Vote to scramble teams
+  version: 1.5.0
+  inputs:
+  - votescramble.sp
+  url: null
+  authors:
+  - Nanochip
+  - viora
+  - raspy
+  license: null
+  dependencies:
+  - nativevotes
+  path: null
+  configs: null
+- name: sm_vprofiler
+  description: Measures per-plugin performance and provides a log with various counters
+  version: 1.0.0
+  inputs:
+  - sm_vprofiler.sp
+  url: null
+  authors:
+  - Moonly Days
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: disableautokick
+  description: Protects players with reserve slot from being autokicked
+  version: 0.0.3
+  inputs:
+  - disableautokick.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: disableautokick
+  description: Hides a players HUD
+  version: 1.0.0
+  inputs:
+  - sm_hidehud.sp
+  url: null
+  authors:
+  - Moonly Days
+  license: null
+  dependencies: null
+  path: null
+  configs: null
 - name: tf2_comp_fixes
   description: Various technical or gameplay changes catered towards competitive play
   version: 1.17.2
@@ -257,7 +176,31 @@
   dependencies: null
   path: null
   configs: null
-- name: sourcemod-nativevotes
+- name: enablewhitelist
+  description: Force-enables tournament mode only when loading and applying the item whitelist.
+  version: 1.0.1
+  inputs:
+  - enablewhitelist.sp
+  url: null
+  authors:
+  - Sappykun
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: unusedvoicelines
+  description: Plays unused announcer voicelines, class speeches, & sounds/music
+  version: 1.1.0
+  inputs:
+  - unusedvoicelines.sp
+  url: null
+  authors:
+  - Nanochip
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: nativevotes
   description: NativeVotes SourceMod plugin (updated)
   version: 1.2.5
   inputs:
@@ -273,6 +216,64 @@
   authors:
   - Powerlord
   - sapphonie
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: votefailed
+  description: Used to display specific vote failed and call vote failed messages to a user
+  version: 1.0.0
+  inputs:
+  - votefailed.sp
+  url: null
+  authors:
+  - Powerlord
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: sm_nocontracker
+  description: Blocks Contracker
+  version: 1.1.0
+  inputs:
+  - sm_nocontracker.sp
+  url: null
+  authors:
+  - Malifox
+  - Sreaper
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: extendedmapconfig
+  description: Allows you to use seperate config files for each gametype and map.
+  version: 1.1.1
+  inputs:
+  - extendedmapconfig.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: afkmanager4
+  description: A package for managing AFKs in a game.
+  version: 4.3.1
+  inputs:
+  - afkmanager4.sp
+  url: null
+  authors: null
+  license: null
+  dependencies: null
+  path: null
+  configs: null
+- name: teamcrits
+  description: Enables permanent crits for either team
+  version: 1.0.0
+  inputs:
+  - teamcrits.sp
+  url: null
+  authors: null
   license: null
   dependencies: null
   path: null
