@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+# yaml-language-server: $schema=../plugin.schema.json
 ---
 name: admin_allspec
 homepage: "https://github.com/Drifter321/admin-all-spec"

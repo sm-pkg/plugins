@@ -10,22 +10,22 @@ permissions:
 
 jobs:
   yamllint:
-    name: "yamllint"
+    name: "yaml linter"
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout"
+      - name: "checkout"
         uses: actions/checkout@v6
 
       - name: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v4
         with:
           comment: true
-          json_schema: "https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json"
+          json_schema: "plugin.schema.json"
           yaml_as_json: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           exclude_file: index.yaml
 
-      - name: "Yamllint"
+      - name: "validate schema"
         uses: karancode/yamllint-github-action@master
         with:
           yamllint_file_or_dir: "*/plugin.yaml"
