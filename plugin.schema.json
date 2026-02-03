@@ -42,8 +42,18 @@
     "configs": {
       "type": "array",
       "items": {
-        "type": "string",
-        "description": "List of configs"
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name/path of the config"
+          },
+          "values": {
+            "type": "object",
+            "description": "The values to write to the config"
+          }
+        },
+        "required": ["name"]
       }
     },
     "dependencies": {
