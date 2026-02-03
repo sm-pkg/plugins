@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../plugin.schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/plugins/refs/heads/master/plugin.schema.json
 ---
 name: send_to_spec
 description: A simple spectator manager.

@@ -9,7 +9,7 @@ Each plugin comes with a plugin definition file named `plugin.yaml`. This file c
 Example `plugin.yaml`
 
 ```yaml
-# yaml-language-server: $schema=../plugin.schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/plugins/refs/heads/master/plugin.schema.json
 name: sm_vprofiler
 description: Measures per-plugin performance and provides a log with various counters
 homepage: "https://github.com/dragokas"
