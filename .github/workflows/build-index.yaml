@@ -17,6 +17,7 @@ jobs:
       - uses: sigoden/install-binary@v1
         with:
           repo: sm-pkg/sm-pkg
+          token: ${{ github.token }}
 
       # - name: install sm-pkg
       #   run: |
