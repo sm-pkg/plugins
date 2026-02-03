@@ -3,5 +3,4 @@
 name: connect
 description: A safer OnClientPreConnect forward
 homepage: "https://github.com/asherkin/connect"
-inputs: []
 version: 1.4.0

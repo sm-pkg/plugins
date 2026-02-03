@@ -64,5 +64,5 @@
       }
     }
   },
-  "required": ["name", "description", "version", "inputs"]
+  "required": ["name", "description", "version"]
 }
