@@ -3,5 +3,4 @@ name: admin_allspec
 homepage: "https://github.com/Drifter321/admin-all-spec"
 description: Allow admins to spectate
 version: 1.0.2
-inputs:
-  - admin-allspec.sp
+inputs: ["admin-allspec.sp"]

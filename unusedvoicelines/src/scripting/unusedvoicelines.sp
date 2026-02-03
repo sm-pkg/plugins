@@ -3,7 +3,7 @@
 #pragma newdecls required
 
 #include <sourcemod>
-#include <gamemode>
+// #include <gamemode>
 #include <tf2>
 #include <tf2_stocks>
 

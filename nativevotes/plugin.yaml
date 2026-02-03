@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/sm-pkg/sm-pkg/refs/heads/master/schema/plugin.json
+name: nativevotes
+description: NativeVotes SourceMod plugin (updated)
+homepage: "https://github.com/sapphonie/sourcemod-nativevotes-updated"
+authors:
+  - Powerlord
+  - sapphonie
+inputs:
+  - nativevotes.sp
+  - nativevotes-basecommands.sp
+  - nativevotes_kickvote_immunity.sp
+  - nativevotes_mapchooser.sp
+  - nativevotes_nominations.sp
+  - nativevotes_rockthevote.sp
+  - votedelay_changelevel.sp
+  - votefailed.sp
+  # - csgo_votestart_test.sp
+  # - nativevotes_votemanager_test.sp
+  # - votediagnostics.sp
+version: 1.2.5
