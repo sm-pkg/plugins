@@ -44,16 +44,16 @@
       "items": {
         "type": "object",
         "properties": {
-          "name": {
+          "path": {
             "type": "string",
             "description": "The name/path of the config"
           },
-          "values": {
+          "options": {
             "type": "object",
             "description": "The values to write to the config"
           }
         },
-        "required": ["name"]
+        "required": ["path", "options"]
       }
     },
     "dependencies": {
