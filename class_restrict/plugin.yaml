@@ -7,7 +7,7 @@ version: 0.6.1
 inputs:
   - classrestrict.sp
 configs:
-  - name: classrestrict.cfg
+  - name: tf/cfg/sourcemod/classrestrict.cfg
     values:
       sm_classrestrict_enabled: "1"
       sm_classrestrict_flags: ""
